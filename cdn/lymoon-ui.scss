@@ -1,0 +1,16 @@
+@import './reset';
+@import './colors';
+@font-face {
+    font-family: 'laymoon-body';
+    src: url(./fonts/MPLUS1p-Regular.ttf) format('truetype');
+}
+*{
+    font-family: 'laymoon-body';
+}
+
+html{
+    scroll-behavior: smooth;
+    background-image: linear-gradient(#fff, #ffe);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
