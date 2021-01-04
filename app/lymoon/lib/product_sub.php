@@ -6,7 +6,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid lymoon-product-slider-bottom" style=" margin-top: -150px;">
+    <div class="container-fluid lymoon-product-slider-bottom" style=" margin-top: -100px;">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-6 col-md-6 ">
                 <h1 class="lymoon-title" style="font-family:laymoon-rich;">Laymoon Spreads</h1>
