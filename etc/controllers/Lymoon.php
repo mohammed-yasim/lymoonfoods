@@ -17,7 +17,7 @@ class Lymoon extends CI_Controller
 				header('Location: ' . $redirect_after_login);
 				exit;
 			}
-			echo('<!DOCTYPE html><html><head><title>Password protected</title></head><body><div style="text-align:center;margin-top:50px;">You must enter the password to view this content.<form method="POST"><input type="password" name="password"></form></div></body></html>');
+			echo ('<!DOCTYPE html><html><head><title>Password protected</title></head><body><div style="text-align:center;margin-top:50px;">You must enter the password to view this content.<form method="POST"><input type="password" name="password"></form></div></body></html>');
 			exit;
 		}
 	}
@@ -26,9 +26,15 @@ class Lymoon extends CI_Controller
 	{
 		$this->load->view('lymoon/main');
 	}
-	public function products($name="all")
+	public function products($name = "all")
 	{
-		$this->load->view('lymoon/products');
+		$data = [];
+		$data['product'] = $name;
+		if ($name == "all") {
+			$this->load->view('lymoon/products');
+		} else {
+			$this->load->view('lymoon/products_sub', $data);
+		}
 	}
 	public function career()
 	{

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lymoon Foods Taste of Goodness</title>
-    <link href="/cdn/lymoon.css" rel="stylesheet" />
+    <link href="/cdn/lymoons.css" rel="stylesheet" />
 </head>
 
 <body>

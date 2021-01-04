@@ -11,11 +11,12 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu dropdown-primary text-uppercase" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/products">ALL</a>
-                        <a class="dropdown-item" href="#">OILS</a>
-                        <a class="dropdown-item" href="#">MANUFACTURES</a>
-                        <a class="dropdown-item" href="#">POWDERS</a>
+                        <a class="dropdown-item" href="/products/<?php echo(urlencode('Curry Powder'));?>">Curry Powder</a>
+                        <a class="dropdown-item" href="/products/<?php echo(urlencode('FERMENTED VISCOUS FOOD'));?>">FERMENTED VISCOUS FOOD</a>
+                        <a class="dropdown-item" href="/products/<?php echo(urlencode('Oils Liquids'));?>">Oils Liquids</a>
+                        <a class="dropdown-item" href="/products/<?php echo(urlencode('Taste Rich Pickles'));?>">Taste Rich Pickles</a>
                     </div>
                 </li>
                 <li class="nav-item">

@@ -4,16 +4,16 @@
         <div class="circlular">
 
             <div class="circle">
-                <a href="/products/1"><img src="https://envato-shoebox-0.imgix.net/aa8e/0a9d-ac9a-43bb-9439-9c0b3d71a551/Circular_Food-28.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=afcc49a369e75e50a02d9a7bba713bce" /></a>
+                <a href="/products/<?php echo(urlencode('Curry Powder'));?>"><img src="/cdn/products/Curry Powder.png" /></a>
             </div>
             <div class="circle">
-                <a href="/products/2"><img src="https://envato-shoebox-0.imgix.net/aa8e/0a9d-ac9a-43bb-9439-9c0b3d71a551/Circular_Food-28.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=afcc49a369e75e50a02d9a7bba713bce" /></a>
+                <a href="/products/<?php echo(urlencode('FERMENTED VISCOUS FOOD'));?>"><img src="/cdn/products/FERMENTED VISCOUS FOOD.png" /></a>
             </div>
             <div class="circle">
-                <a href="/products/3"><img src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/vxf0jKsITLQTxm5F41eCPQmPG6Q=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/WIISTNU3LAI6JEEC4PH3QC5TYM.jpg" /></a>
+                <a href="/products/<?php echo(urlencode('Oils Liquids'));?>"><img src="/cdn/products/Oils Liquids.png" /></a>
             </div>
             <div class="circle">
-                <a href="/products/4"><img src="https://envato-shoebox-0.imgix.net/aa8e/0a9d-ac9a-43bb-9439-9c0b3d71a551/Circular_Food-28.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=afcc49a369e75e50a02d9a7bba713bce" /></a>
+                <a href="/products/<?php echo(urlencode('Taste Rich Pickles'));?>"><img src="/cdn/products/Taste Rich Pickles.png" /></a>
             </div>
         </div>
     </div>

@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Lymoon Foods</title>
+    <title> <?php echo(urldecode($product));?> | Lymoon Foods</title>
     <link href="/cdn/lymoons.css" rel="stylesheet" />
 </head>
 
 <body>
     <?php $this->load->view('lymoon/lib/nav'); ?>
     <div style="width: 100%;height:100px;"></div>
-    <?php $this->load->view('lymoon/lib/product_banner'); ?>
-    <?php $this->load->view('lymoon/lib/product_slider'); ?>
+
+    <?php $data=[];$data['name']=urldecode($product); $this->load->view('lymoon/lib/product_sub',$data); ?>
     <?php $this->load->view('lymoon/lib/footer'); ?>
 </body>
 <?php $this->load->view('lymoon/lib/js'); ?>
