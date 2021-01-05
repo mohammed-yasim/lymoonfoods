@@ -23,5 +23,4 @@
     class="float" target="_blank">
     <i class="fa fa-whatsapp"></i>
 </a>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="/cdn/mdb.min.js"></script>

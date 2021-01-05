@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-1">
+<nav id="custom-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-1">
     <div class="container">
         <a class="navbar-brand" style="max-width: 80px" href="/"><img src="/cdn/lymoon_logo.png" class="img-fluid brand logo" loading="lazy" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +13,14 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
                     <div class="dropdown-menu dropdown-primary text-uppercase" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/products">ALL</a>
-                        <a class="dropdown-item" href="/products/<?php echo(urlencode('Curry Powder'));?>">Curry Powder</a>
-                        <a class="dropdown-item" href="/products/<?php echo(urlencode('FERMENTED & VISCOUS FOOD'));?>">FERMENTED VISCOUS FOOD</a>
-                        <a class="dropdown-item" href="/products/<?php echo(urlencode('Oils & Liquids'));?>">Oils Liquids</a>
-                        <a class="dropdown-item" href="/products/<?php echo(urlencode('Taste Rich Pickles'));?>">Taste Rich Pickles</a>
+                        <a class="dropdown-item" href="/products/<?php echo (urlencode('Curry Powder')); ?>">Curry
+                            Powder</a>
+                        <a class="dropdown-item" href="/products/<?php echo (urlencode('FERMENTED & VISCOUS FOOD')); ?>">FERMENTED VISCOUS
+                            FOOD</a>
+                        <a class="dropdown-item" href="/products/<?php echo (urlencode('Oils & Liquids')); ?>">Oils
+                            Liquids</a>
+                        <a class="dropdown-item" href="/products/<?php echo (urlencode('Taste Rich Pickles')); ?>">Taste
+                            Rich Pickles</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -35,3 +39,15 @@
         </div>
     </div>
 </nav>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("custom-navbar").style.top = "0";
+        } else {
+            document.getElementById("custom-navbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
