@@ -197,7 +197,7 @@
 
 </footer>
 <!-- Copyright -->
-<div style="overflow: hidden;font-size:80%" class="lymoon-bg-dark text-white">
+<div style="overflow: hidden;font-size:75%" class="lymoon-bg-dark text-white">
     <div class="container pt-2"><b>
             <p class="text-left">&copy; SILVANO Creative Concepts
         </b> All Rights Reserved | Privacy & Policy</p>

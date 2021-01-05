@@ -4,8 +4,8 @@
         position: fixed;
         width: 40px;
         height: 40px;
-        top: 60vh;
-        left: 10vh;
+        bottom: 30px;
+        left: 50px;
         background-color: #25d366;
         color: #FFF;
         border-radius: 40px;
@@ -19,7 +19,7 @@
         color: white;
     }
 </style>
-<a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+<a href="https://api.whatsapp.com/send?phone=919746830098&text=Hello+from+web"
     class="float" target="_blank">
     <i class="fa fa-whatsapp"></i>
 </a>
