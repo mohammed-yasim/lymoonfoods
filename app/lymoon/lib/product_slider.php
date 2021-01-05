@@ -4,7 +4,6 @@
         <a class="carousel-item" href="#two!"><img src="/cdn/images/p (2).png"></a>
         <a class="carousel-item" href="#two!"><img src="/cdn/images/p (3).png"></a>
         <a class="carousel-item" href="#two!"><img src="/cdn/images/p (5).png"></a>
-        <a class="carousel-item" href="#two!"><img src="/cdn/images/p (5).png"></a>
         <a class="carousel-item" href="#two!"><img src="/cdn/images/p (6).png"></a>
         <a class="carousel-item" href="#two!"><img src="/cdn/images/p (7).png"></a>
         <a class="carousel-item" href="#two!"><img src="/cdn/images/p (8).png"></a>

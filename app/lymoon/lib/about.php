@@ -1,4 +1,4 @@
-<section id="about" class="bg-dark" style="overflow: hidden;">
+<section id="about" class="" style="background-image: url('/cdn/bg.jpg'); background-size:cover;overflow: hidden;">
     <div style="width: 100%;height:100px;"></div>
     <div class="container-fluid extra-top">
         <div class="container text-center text-warning my-5">

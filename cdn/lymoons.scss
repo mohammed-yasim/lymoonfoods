@@ -43,8 +43,15 @@ $lymoon-nav-height:100px;
 
 * {
     font-family: 'laymoon-global';
+    font-weight: 600;
 
+}
 
+.lymoon-justify {
+    text-align: justify;
+    text-justify: inter-word;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
 footer a {
@@ -178,26 +185,53 @@ header {
 
     }
 
-    @keyframes animateer {
+    /* Next & previous buttons 
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 80px;
+        padding: 5px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        user-select: none;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+    .prev{
+        left: 0;
+        border-radius: 0 3px 3px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    */
+    @keyframes fadeInRight {
         0% {
-            transform: translateX(-1px);
-        }
-
-        25% {
-            transform: translateX(0);
-        }
-
-        50% {
-            transform: translateX(1px);
-        }
-
-        75% {
-            transform: translateX(0);
+            opacity: 0;
+            transform: translateX(-100%);
         }
 
         100% {
-            transform: translateX(-1px);
+            opacity: 1;
+            transform: translateX(0);
         }
+    }
+
+    .fadeInRight {
+        -webkit-animation-name: fadeInRight;
+        animation-name: fadeInRight;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
     }
 
     .circlular {
@@ -228,11 +262,11 @@ header {
                 margin: auto;
                 width: 100%;
                 height: 100%;
-                border-radius: 100px;
             }
         }
 
         .circle {
+
             margin: 40px;
             width: 200px;
             height: 200px;
@@ -240,7 +274,6 @@ header {
             border: none;
             outline: none;
             position: relative;
-            animation: 0.5s infinite animateer;
 
 
             img {
@@ -252,7 +285,6 @@ header {
                 margin: auto;
                 width: 100%;
                 height: 100%;
-                border-radius: 100px;
             }
         }
 
@@ -272,6 +304,33 @@ header {
     .lymoon-title {
         color: $green-darken-3;
         margin-bottom: 30px;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin: auto;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+
+    .prev {
+        left: 15vw;
+        border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 15vw;
+        border-radius: 3px 0 0 3px;
     }
 }
 
@@ -309,9 +368,9 @@ footer {
 
         .circlular {
             .single {
-                margin: -10px;
-                height: 60px;
-                width: 60px;
+                margin: -25px;
+                height: 80px;
+                width: 80px;
             }
 
             .circle {
@@ -339,9 +398,10 @@ footer {
         .circlular {
             .single {
                 margin: -20px;
-                height: 60px;
-                width: 60px;
+                height: 150px;
+                width: 150px;
             }
+
             .circle {
                 margin: 15px;
                 height: 100px;
@@ -374,8 +434,8 @@ footer {
 
             .circle {
                 margin: 30px;
-                height: 150px;
-                width: 150px;
+                height: 180px;
+                width: 180px;
             }
 
             :nth-child(2),
@@ -385,4 +445,16 @@ footer {
         }
     }
 
+}
+
+@media (min-width: 1400px) and (max-width: 2000px) {
+    .lymoon-product-slider-bottom {
+        .prev {
+            left: 20vw;
+        }
+
+        .next {
+            right: 20vw;
+        }
+    }
 }

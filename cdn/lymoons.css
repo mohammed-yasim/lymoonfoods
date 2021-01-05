@@ -14473,6 +14473,13 @@ html[xmlns] .flexslider .slides {
 
 * {
   font-family: 'laymoon-global';
+  font-weight: 600;
+}
+
+.lymoon-justify {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
 }
 
 footer a {
@@ -14685,6 +14692,34 @@ header .custom-controls-container .flex-control-nav {
   z-index: 800;
   overflow: hidden;
   background: white;
+  /* Next & previous buttons 
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 80px;
+        padding: 5px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        user-select: none;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+    .prev{
+        left: 0;
+        border-radius: 0 3px 3px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    */
 }
 
 .lymoon-product-slider::after {
@@ -14709,50 +14744,39 @@ header .custom-controls-container .flex-control-nav {
   border-top-right-radius: 180vw;
 }
 
-@-webkit-keyframes animateer {
+@-webkit-keyframes fadeInRight {
   0% {
-    -webkit-transform: translateX(-1px);
-            transform: translateX(-1px);
-  }
-  25% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(1px);
-            transform: translateX(1px);
-  }
-  75% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
-    -webkit-transform: translateX(-1px);
-            transform: translateX(-1px);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-@keyframes animateer {
+@keyframes fadeInRight {
   0% {
-    -webkit-transform: translateX(-1px);
-            transform: translateX(-1px);
-  }
-  25% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(1px);
-            transform: translateX(1px);
-  }
-  75% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
-    -webkit-transform: translateX(-1px);
-            transform: translateX(-1px);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
+}
+
+.lymoon-product-slider .fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .lymoon-product-slider .circlular {
@@ -14787,7 +14811,6 @@ header .custom-controls-container .flex-control-nav {
   margin: auto;
   width: 100%;
   height: 100%;
-  border-radius: 100px;
 }
 
 .lymoon-product-slider .circlular .circle {
@@ -14797,8 +14820,6 @@ header .custom-controls-container .flex-control-nav {
   border: none;
   outline: none;
   position: relative;
-  -webkit-animation: 0.5s infinite animateer;
-          animation: 0.5s infinite animateer;
 }
 
 .lymoon-product-slider .circlular .circle img {
@@ -14810,7 +14831,6 @@ header .custom-controls-container .flex-control-nav {
   margin: auto;
   width: 100%;
   height: 100%;
-  border-radius: 100px;
 }
 
 .lymoon-product-slider .circlular :nth-child(2),
@@ -14823,11 +14843,42 @@ header .custom-controls-container .flex-control-nav {
   z-index: 801;
   margin-top: -80px;
   padding-bottom: 60px;
+  /* Position the "next button" to the right */
 }
 
 .lymoon-product-slider-bottom .lymoon-title {
   color: #2e7d32;
   margin-bottom: 30px;
+}
+
+.lymoon-product-slider-bottom .prev,
+.lymoon-product-slider-bottom .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.lymoon-product-slider-bottom .prev {
+  left: 15vw;
+  border-radius: 0 3px 3px 0;
+}
+
+.lymoon-product-slider-bottom .next {
+  right: 15vw;
+  border-radius: 3px 0 0 3px;
 }
 
 footer {
@@ -14858,9 +14909,9 @@ footer {
     margin-top: 40px;
   }
   .lymoon-product-slider .circlular .single {
-    margin: -10px;
-    height: 60px;
-    width: 60px;
+    margin: -25px;
+    height: 80px;
+    width: 80px;
   }
   .lymoon-product-slider .circlular .circle {
     margin: 7px;
@@ -14882,8 +14933,8 @@ footer {
   }
   .lymoon-product-slider .circlular .single {
     margin: -20px;
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
   }
   .lymoon-product-slider .circlular .circle {
     margin: 15px;
@@ -14910,12 +14961,21 @@ footer {
   }
   .lymoon-product-slider .circlular .circle {
     margin: 30px;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
   }
   .lymoon-product-slider .circlular :nth-child(2),
   .lymoon-product-slider .circlular :nth-child(3) {
     margin-top: -10px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 2000px) {
+  .lymoon-product-slider-bottom .prev {
+    left: 20vw;
+  }
+  .lymoon-product-slider-bottom .next {
+    right: 20vw;
   }
 }
 /*# sourceMappingURL=lymoons.css.map */
